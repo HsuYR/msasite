@@ -251,8 +251,11 @@
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
+    color: $text-color;
+
     width: 30%;
     text-decoration: none;
+
     @include transition(box-shadow 0.5s);
 
     &:hover {
@@ -263,12 +266,11 @@
       width: 100%;
     }
     h2 {
-      color: $text-color;
       margin: $spacing-unit;
     }
     p {
+      text-align: left;
       margin: $spacing-unit;
-      color: $text-color;
     }
   }
 }
