@@ -9,8 +9,18 @@
       <img src="{{post.intro_image_url}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
       {% endif %}
       <h2>{{post.title}}</h2>
-      <p>{{post.excerpt}}</p>
+      {{post.excerpt}}
 
   </a>
   {% endfor %}
 </div>
+<script>
+var limit = 30;
+var cards = document.getElementsByClassName('card');
+for (i=0; i<cards.length; i++) {
+  var excerpt = cards[i].getElementsByTagName('p')[0].innerHTML;
+  if(excerpt.length > limit) {
+    cards[i].getElementsByTagName('p')[0].innerHTML = excerpt.substring(0, limit-3) + "&hellip;";
+  }
+}
+</script>
