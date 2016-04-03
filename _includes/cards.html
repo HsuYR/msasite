@@ -1,26 +1,18 @@
 <div class="cards">
   {% for post in include.category %}
-  <a class="card" href="{{post.url}}">
-
-      {% if post.intro_image %}
-      <img src="{{site.baseurl}}/{{post.intro_image}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
-      {% endif %}
-      {% if post.intro_image_url %}
-      <img src="{{post.intro_image_url}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
-      {% endif %}
-      <h2>{{post.title}}</h2>
-      {{post.excerpt}}
-
-  </a>
+  <div class="card">
+    <a href="{{post.url}}">
+        {% if post.intro_image %}
+        <img src="{{site.baseurl}}/{{post.intro_image}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
+        {% endif %}
+        {% if post.intro_image_url %}
+        <img src="{{post.intro_image_url}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
+        {% endif %}
+        <div>
+          <h2>{{post.title}}</h2>
+          {{post.excerpt}}
+        </div>
+    </a>
+  </div>
   {% endfor %}
 </div>
-<script>
-var limit = 30;
-var cards = document.getElementsByClassName('card');
-for (i=0; i<cards.length; i++) {
-  var excerpt = cards[i].getElementsByTagName('p')[0].innerHTML;
-  if(excerpt.length > limit) {
-    cards[i].getElementsByTagName('p')[0].innerHTML = excerpt.substring(0, limit-3) + "&hellip;";
-  }
-}
-</script>

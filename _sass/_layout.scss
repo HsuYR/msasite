@@ -245,32 +245,37 @@
  * Cards
  */
 .cards {
-  -webkit-display: flex;
-  display: flex;
-  justify-content: space-around;
+  float: left;
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: $text-color;
-
-    width: 30%;
-    text-decoration: none;
-
     @include transition(box-shadow 0.5s);
+    margin: 14px 7px 7px 0;
+
+    width: 236px;
+    @include media-query($on-palm) {
+      width: 170px;
+    }
 
     &:hover {
       box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.29);
       text-decoration: none;
     }
-    img {
-      width: 100%;
-    }
-    h2 {
-      margin: $spacing-unit;
-    }
-    p {
-      text-align: left;
-      margin: $spacing-unit;
+    a {
+      color: $text-color;
+      text-decoration: none;
+
+      img {
+        max-width: 100%;
+      }
+      div {
+        padding: 10px;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: left;
+        }
+      }
     }
   }
 }
