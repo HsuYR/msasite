@@ -3,7 +3,7 @@ layout: post
 title: 全國醫學生聯合文學獎
 date: 2016-04-03 11:55:30 +0800
 categories: events arts
-tags: ft-col-1
+tags:
 intro_image_url: https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/s960x960/12898262_1021835817891839_7241739712421761113_o.jpg
 intro_image_name: 醫文獎
 ---
