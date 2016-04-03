@@ -17,6 +17,7 @@ url: http://hsuyr.github.io # the base hostname & protocol for your site
 twitter_username:
 github_username:
 facebook_username: kmumed
+address: 高雄市三民區十全一路100號
 
 # Build settings
 markdown: kramdown
