@@ -3,7 +3,7 @@
     {% for post in include.category %}
     <div class="card-shadow-wrap">
       <div class="card">
-        <a href="{{post.url}}">
+        <a href="{{site.baseurl}}{{post.url}}">
             {% if post.intro_image %}
             <img src="{{site.baseurl}}/{{post.intro_image}}"{% if post.intro_image_name %} alt="{{post.intro_image_name}}"{% endif %}/>
             {% endif %}
