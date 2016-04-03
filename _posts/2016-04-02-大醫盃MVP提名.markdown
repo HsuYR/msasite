@@ -3,7 +3,7 @@ layout: post
 title: 大醫盃MVP提名
 date: 2016-04-02 10:52:27 +0800
 categories: events sports
-tags: ft-col-2
+tags:
 intro_image_url: http://www.w3schools.com/w3css/img_fjords.jpg
 intro_image_name: Fjords
 ---
