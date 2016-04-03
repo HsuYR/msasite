@@ -6,9 +6,6 @@ layout: default
 
   <h1 class="page-heading">動態</h1>
 
-  {% include cards.html category=site.tags.ft-col-1 %}
-  {% include cards.html category=site.tags.ft-col-2 %}
-  {% include cards.html category=site.tags.ft-col-3 %}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% include cards.html category=site.posts %}
 
 </div>
