@@ -4,8 +4,8 @@
     <div class="card-shadow-wrap">
       <div class="card">
         <a href="{{site.baseurl}}{{post.url}}">
-            {% if post.intro_image %}
-            <img src="{{post.intro_image}}"{% if post.intro_image_name %} alt="{{post.intro_image_caption}}"{% endif %}/>
+            {% if post.intro_image_url %}
+            <img src="{{post.intro_image_url}}"{% if post.intro_image_caption %} alt="{{post.intro_image_caption}}"{% endif %}/>
             {% endif %}
             <div>
               <h2>{{post.title}}</h2>
