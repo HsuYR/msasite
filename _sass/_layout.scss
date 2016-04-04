@@ -251,14 +251,14 @@
   justify-content: center;
   .cards {
     @include column-count(3);
-    @include column-gap(14px);
+    @include column-gap(20px);
     @include media-query($on-palm) {
       @include column-count(1);
       @include column-width(100%);
     }
 
     .card-shadow-wrap {
-      padding: 10px 0 10px;
+      padding: 5px 0 25px;
       -webkit-column-break-inside: avoid;
       -moz-column-break-inside: avoid;
       column-break-inside: avoid;
@@ -268,7 +268,7 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         @include transition(box-shadow 0.2s);
         &:hover {
-          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+          box-shadow: 0 10px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         };
 
         a {
