@@ -19,6 +19,8 @@ github_username:
 facebook_username: kmumed
 address: 高雄市三民區十全一路100號
 slogan: 
+feedback_form_url: http://goo.gl/forms/870g1nollN
+equip_borrowing_form_url: http://goo.gl/forms/oUHGlifFNi
 
 # Build settings
 markdown: kramdown
