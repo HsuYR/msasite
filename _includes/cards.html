@@ -1,5 +1,6 @@
 <div class="cards-wrapper">
   <div class="cards">
+    {% include function-card.html %}
     {% for post in include.category %}
     <div class="card-shadow-wrap">
       <div class="card">
@@ -14,13 +15,6 @@
         </a>
       </div>
     </div>
-    {% if forloop.last %}
-    <div class="card-shadow-wrap">
-      <div class="card">
-        {% include function-card.html %}
-      </div>
-    </div>
-    {% endif %}
     {% endfor %}
   </div>
 </div>
