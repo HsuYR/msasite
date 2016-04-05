@@ -264,7 +264,7 @@
       column-break-inside: avoid;
 
       .card {
-        max-width: 236px;
+        max-width: 300px;
         @extend %shadow-z-1;
         @include transition(box-shadow 0.2s);
         &:hover {
