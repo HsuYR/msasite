@@ -1,8 +1,39 @@
-<div class="cards-wrapper">
-  <div class="cards">
-    {% include sticky-link-cards.html %}
-    {% for post in include.category %}
-    <div class="card-shadow-wrap">
+{% for j in (1..2) %}
+{% if {{j}} == 1 %}
+<div class="multi-col">
+{% assign col = site.cards-column %}
+{% else %}
+<div class="single-col">
+{% assign col = 1 %}
+{% endif %}
+  <div class="cards-wrapper">
+
+    {% for i in (1..col) %}
+    <div class="cards">
+      {% if {{i}} == 1 %}
+      <!-- sticky cards -->
+      <div class="card">
+        <a href="{{ site.feedback_form_url }}">
+          <div>
+            <h4>遇到困難？說來聽聽！</h4>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="{{ site.equip_borrowing_form_url }}">
+          <div>
+            <h4>想借攝影器材？</h4>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+
+      {% for post in include.category %}
+      {% assign index = forloop.index | modulo: col %}
+      {% if index == 0 %}
+      {% assign index = col %}
+      {% endif %}
+      {% if index == i %}
       <div class="card">
         <a href="{{site.baseurl}}{{post.url}}">
             {% if post.intro_image_url %}
@@ -14,7 +45,10 @@
             </div>
         </a>
       </div>
+      {% endif %}
+      {% endfor %}
     </div>
     {% endfor %}
   </div>
 </div>
+{% endfor %}
