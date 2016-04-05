@@ -256,38 +256,30 @@
       @include column-count(1);
       @include column-width(100%);
     }
+    .card {
+      max-width: 300px;
+      @extend %shadow-z-1;
+      @include transition(box-shadow 0.2s);
+      &:hover {
+        @extend %shadow-z-5;
+      };
 
-    .card-shadow-wrap {
-      padding: 5px 0 25px;
-      -webkit-column-break-inside: avoid;
-      -moz-column-break-inside: avoid;
-      column-break-inside: avoid;
+      a {
 
-      .card {
-        max-width: 300px;
-        @extend %shadow-z-1;
-        @include transition(box-shadow 0.2s);
-        &:hover {
-          @extend %shadow-z-5;
-        };
+        color: $text-color;
+        text-decoration: none;
 
-        a {
-
-          color: $text-color;
-          text-decoration: none;
-
-          img {
-            max-width: 100%;
+        img {
+          max-width: 100%;
+        }
+        div {
+          padding: 10px;
+          h2, h4 {
+            margin-bottom: 0;
+            text-align: center;
           }
-          div {
-            padding: 10px;
-            h2, h4 {
-              margin-bottom: 0;
-              text-align: center;
-            }
-            p {
-              text-align: left;
-            }
+          p {
+            text-align: left;
           }
         }
       }
