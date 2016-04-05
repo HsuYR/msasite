@@ -280,7 +280,7 @@
   @extend %shadow-z-1;
   @include transition(box-shadow 0.2s);
   &:hover {
-    @extend %shadow-z-5;
+    @extend %shadow-z-2;
   };
 
   a {
