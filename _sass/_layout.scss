@@ -245,43 +245,51 @@
 /**
  * Cards
  */
-.cards-wrapper{
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  .cards {
-    @include column-count(3);
-    @include column-gap(20px);
-    @include media-query($on-palm) {
-      @include column-count(1);
-      @include column-width(100%);
+ .multi-col {
+   display: block;
+ }
+ .single-col {
+   display: none;
+ }
+ @include media-query($on-palm) {
+   .multi-col {
+     display: none;
+   }
+   .single-col {
+     display: block;
+   }
+ }
+
+ .cards-wrapper {
+   display: -webkit-flex;
+   display: flex;
+   justify-content: center;
+ }
+
+.card {
+  max-width: 300px;
+  @extend %shadow-z-1;
+  @include transition(box-shadow 0.2s);
+  &:hover {
+    @extend %shadow-z-5;
+  };
+
+  a {
+
+    color: $text-color;
+    text-decoration: none;
+
+    img {
+      max-width: 100%;
     }
-    .card {
-      max-width: 300px;
-      @extend %shadow-z-1;
-      @include transition(box-shadow 0.2s);
-      &:hover {
-        @extend %shadow-z-5;
-      };
-
-      a {
-
-        color: $text-color;
-        text-decoration: none;
-
-        img {
-          max-width: 100%;
-        }
-        div {
-          padding: 10px;
-          h2, h4 {
-            margin-bottom: 0;
-            text-align: center;
-          }
-          p {
-            text-align: left;
-          }
-        }
+    div {
+      padding: 10px;
+      h2, h4 {
+        margin-bottom: 0;
+        text-align: center;
+      }
+      p {
+        text-align: left;
       }
     }
   }
