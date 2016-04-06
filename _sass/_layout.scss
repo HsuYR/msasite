@@ -266,9 +266,9 @@
    .cards {
      display: -webkit-flex;
      display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: center;
+     flex-direction: column-reverse;
+     justify-content: flex-end;
+     align-items: flex;
      padding: 0 10px 0;
    }
  }
