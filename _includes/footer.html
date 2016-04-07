@@ -2,13 +2,16 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <h2 class="footer-heading">{{ site.slogan }}</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% if site.address %}
+          <li><a href="https://www.google.com.tw/maps?q={{ site.address }}">{{ site.address }}</a></li>
+          {% endif %}
         </ul>
       </div>
 
@@ -16,20 +19,26 @@
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            {% include icons/icon-github.html username=site.github_username %}
           </li>
           {% endif %}
 
           {% if site.twitter_username %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+            {% include icons/icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.facebook_username %}
+          <li>
+            {% include icons/icon-facebook.html username=site.facebook_username %}
           </li>
           {% endif %}
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <p>©2016高雄醫學大學醫學系學生會KMUMSA</p>
       </div>
     </div>
 
