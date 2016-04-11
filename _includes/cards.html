@@ -10,25 +10,8 @@
 
     {% for i in (1..col) %}
     <div class="cards">
-      {% if {{i}} == 1 %}
-      <!-- sticky cards -->
-      <div class="card">
-        <a href="{{ site.feedback_form_url }}">
-          <div>
-            <h4>遇到困難？說來聽聽！</h4>
-          </div>
-        </a>
-      </div>
-      <div class="card">
-        <a href="{{ site.equip_borrowing_form_url }}">
-          <div>
-            <h4>想借攝影器材？</h4>
-          </div>
-        </a>
-      </div>
-      {% endif %}
 
-      {% for post in include.category %}
+      {% for post in include.category reversed %}
       {% assign index = forloop.index | modulo: col %}
       {% if index == 0 %}
       {% assign index = col %}
@@ -47,6 +30,25 @@
       </div>
       {% endif %}
       {% endfor %}
+
+      {% if {{i}} == 1 %}
+      <!-- sticky cards -->
+      <div class="card">
+        <a href="{{ site.equip_borrowing_form_url }}">
+          <div>
+            <h4>想借攝影器材？</h4>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a href="{{ site.feedback_form_url }}">
+          <div>
+            <h4>遇到困難？說來聽聽！</h4>
+          </div>
+        </a>
+      </div>
+      <!-- end of sticky cards -->
+      {% endif %}
     </div>
     {% endfor %}
   </div>
