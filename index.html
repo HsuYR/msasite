@@ -1,11 +1,14 @@
 ---
-layout: default
+layout: fullwidth
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">動態</h1>
+  <div class="wrapper">
+    <h1 class="page-heading">動態</h1>
+    {% include cards.html category=site.posts %}
+  </div>
 
-  {% include cards.html category=site.posts %}
+  {% include about.html %}
 
 </div>

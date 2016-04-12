@@ -288,3 +288,57 @@
     }
   }
 }
+
+
+
+/*
+ * About section
+ */
+.about {
+  background-color: $background-color;
+  margin: 50px auto;
+  ul {
+    margin: 0 auto;
+  }
+}
+
+.tabs {
+  list-style-type: none;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  list-style-type: none;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+
+  li {
+    width: 150px;
+    padding: 10px 40px;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: $text-color;
+  }
+
+  .name {
+    margin-top: 10px;
+    font-size: $base-font-size * 1.5;
+  }
+
+  .position {
+    opacity: 0.6;
+    font-size: $base-font-size * 1.25;
+  }
+}

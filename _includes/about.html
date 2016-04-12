@@ -1,0 +1,55 @@
+<section class="about">
+  <ul class="tabs">
+    <li><h1>團隊</h1></li>
+  </ul>
+
+  <ul class="team">
+    {% assign members = site.team | sort: 'order' %}
+    {% for member in members %}
+    <li>
+      <a class="member" href="{{site.baseurl}}{{member.url}}">
+        <div class="thumbnail"><img src="{{member.thumbnail}}" alt="{{member.position}}{{member.name}}"></div>
+        <h2 class="name">{{member.name}}</h2>
+        <h2 class="position">{{member.position}}</h2>
+      </a>
+    </li>
+    {% endfor %}
+    <li>國際事務部</li>
+    <li>監事會</li>
+  </ul>
+
+  <ul>
+    <li>醫聯會</li>
+    <li>高雄醫學大學醫學系</li>
+    <li>南杏社</li>
+  </ul>
+
+  <div class="sponsor">
+    <h1>贊助</h1>
+    <ul>
+      <li>邱坤興診所</li>
+      <li>林彥克醫師</li>
+      <li>余方榮醫師</li>
+      <li>台灣房屋(澄清店)-江元清</li>
+      <li>帕瑪諾pamono</li>
+      <li>hand's date輕食餐廳</li>
+      <li>金石堂眼鏡</li>
+      <li>丼自慢</li>
+      <li>丰味町和風小館</li>
+      <li>宇田耳鼻喉科(張敬驩醫師)</li>
+      <li>小圈圈霜淇淋</li>
+      <li>楓茶記</li>
+      <li>蒸饡蒸餃</li>
+      <li>超吉大盛鐵板便當</li>
+      <li>Mr.English 德民店</li>
+      <li>Wake up 濰克早午餐(吉林店)</li>
+      <li>日形時尚髮型</li>
+      <li>拉斐爾108廚房(後驛站)</li>
+      <li>多力廚房</li>
+      <li>峰拉麵</li>
+      <li>合記書局</li>
+      <li>牛小弟牛排</li>
+      <li>好市多(大順店)</li>
+    </ul>
+  </div>
+</section>
