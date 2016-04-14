@@ -18,7 +18,7 @@ twitter_username:
 github_username:
 facebook_username: kmumed
 address: 高雄市三民區十全一路100號
-slogan: 
+slogan:
 feedback_form_url: http://goo.gl/forms/870g1nollN
 equip_borrowing_form_url: http://goo.gl/forms/oUHGlifFNi
 
@@ -28,3 +28,10 @@ cards-column: 3
 collections:
   team:
     output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: team
+    values:
+      layout: meet
