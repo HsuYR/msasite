@@ -1,17 +1,14 @@
 ---
-layout: default
+layout: fullwidth
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post meet" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">遇見{{ page.name }}</h1>
+  <header class="post-header meet-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.position }}{{ page.name }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {% if page.intro_image_url %}
-    <img src="{{page.intro_image_url}}" alt="{{page.intro_image_caption}}">
-    {% endif %}
+  <div class="post-content meet-content" itemprop="articleBody">
     {{ content }}
   </div>
 

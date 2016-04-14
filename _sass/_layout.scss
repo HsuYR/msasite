@@ -342,3 +342,27 @@
     font-size: $base-font-size * 1.25;
   }
 }
+
+.meet {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  @extend %shadow-z-1;
+  @include media-query($on-palm) {
+    width: 300px;
+  }
+}
+
+.meet-content {
+  overflow: auto;
+  img {
+    margin-right: 20px;
+    float: left;
+    width: 40%;
+    max-width: 600px;
+    @include media-query($on-palm) {
+      float: none;
+      width: 100%;
+    }
+  }
+}
