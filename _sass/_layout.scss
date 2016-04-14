@@ -302,11 +302,9 @@
   }
 }
 
-.tabs {
-  list-style-type: none;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
+.about-title {
+  text-align: center;
+  font-size: $base-font-size * 2;
 }
 
 .team {
