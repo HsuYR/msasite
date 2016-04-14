@@ -25,3 +25,6 @@ equip_borrowing_form_url: http://goo.gl/forms/oUHGlifFNi
 # Build settings
 markdown: kramdown
 cards-column: 3
+collections:
+  team:
+    output: true
