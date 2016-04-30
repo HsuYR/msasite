@@ -289,6 +289,42 @@
   }
 }
 
+/*
+ * Services
+ */
+.services {
+  margin: 20px 0;
+  padding: 20px 0;
+  background-color: $grey-color-light;
+  h1 {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  a {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 150px;
+    &:visited, &:hover {
+      color: $text-color;
+    }
+  }
+
+  svg {
+    fill: $primary-color;
+    height: 100px;
+  }
+}
 
 
 /*
