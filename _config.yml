@@ -21,6 +21,7 @@ address: 高雄市三民區十全一路100號
 slogan:
 feedback_form_url: http://goo.gl/forms/870g1nollN
 equip_borrowing_form_url: http://goo.gl/forms/oUHGlifFNi
+equip_borrowing_direction_url: https://docs.google.com/spreadsheets/d/1hGbtZr5JV5CBTsXL5Q8hP7il4edecQ1QWX_xnrrYNXQ/edit?usp=sharing
 
 # Build settings
 markdown: kramdown
