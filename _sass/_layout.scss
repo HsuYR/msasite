@@ -100,6 +100,17 @@
     margin-left: 0;
 }
 
+.kmumsa-icon svg {
+  width: 120px;
+  path {
+    fill: $grey-color;
+    @include transition(fill .2s);
+  }
+  &:hover path {
+    fill: $primary-color;
+  }
+}
+
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
