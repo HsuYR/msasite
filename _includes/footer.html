@@ -12,29 +12,33 @@
           {% if site.address %}
           <li><a href="https://www.google.com.tw/maps?q={{ site.address }}">{{ site.address }}</a></li>
           {% endif %}
+          {% if site.calendar %}
+          <li><a href="{{ site.calendar }}">行事曆</a></li>
+          {% endif %}
+          <ul class="social-media-list">
+            {% if site.github_username %}
+            <li>
+              {% include icons/icon-github.html username=site.github_username %}
+            </li>
+            {% endif %}
+
+            {% if site.twitter_username %}
+            <li>
+              {% include icons/icon-twitter.html username=site.twitter_username %}
+            </li>
+            {% endif %}
+
+            {% if site.facebook_username %}
+            <li>
+              {% include icons/icon-facebook.html username=site.facebook_username %}
+            </li>
+            {% endif %}
+            </ul>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icons/icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icons/icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-
-          {% if site.facebook_username %}
-          <li>
-            {% include icons/icon-facebook.html username=site.facebook_username %}
-          </li>
-          {% endif %}
-        </ul>
+        <a href="{{ site.baseurl }}" class="kmumsa-icon">{% include icons/icon-kmumsa.svg %}</a>
       </div>
 
       <div class="footer-col footer-col-3">
