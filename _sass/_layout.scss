@@ -56,7 +56,7 @@
 }
 
 .page-link {
-  &, &:visited {
+  &, &:visited, &:hover {
     color: $grey-color-dark;
   }
 }
