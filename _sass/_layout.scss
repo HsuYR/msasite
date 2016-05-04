@@ -73,9 +73,9 @@
     margin: 0;
     @include transition(height .2s);
   }
-  .show-site-nav {
-    height: 56px;
-    @include transition(height .2s);
+  .trigger li {
+    display: block;
+    text-align: center;
   }
 }
 
