@@ -1,42 +1,45 @@
-{% for j in (1..2) %}
-{% if {{j}} == 1 %}
-<div class="multi-col">
-{% assign col = site.cards-column %}
-{% else %}
-<div class="single-col">
-{% assign col = 1 %}
-{% endif %}
-  <div class="cards-wrapper">
+<div class="wrapper">
+<h1 class="page-heading">動態</h1>
+  {% for j in (1..2) %}
+  {% if {{j}} == 1 %}
+  <div class="multi-col">
+  {% assign col = site.cards-column %}
+  {% else %}
+  <div class="single-col">
+  {% assign col = 1 %}
+  {% endif %}
+    <div class="cards-wrapper">
 
-    {% for i in (1..col) %}
-    <div class="cards">
+      {% for i in (1..col) %}
+      <div class="cards">
 
-      {% for post in include.category reversed %}
-      {% assign index = forloop.index | modulo: col %}
-      {% if index == 0 %}
-      {% assign index = col %}
-      {% endif %}
-      {% if index == i %}
-      <div class="card">
-        <a href="{{site.baseurl}}{{post.url}}">
-            {% if post.intro_image_url %}
-            <img src="{{post.intro_image_url}}"{% if post.intro_image_caption %} alt="{{post.intro_image_caption}}"{% endif %}/>
-            {% endif %}
-            <div>
-              <h2>{{post.title}}</h2>
-              {{post.excerpt}}
-            </div>
-        </a>
+        {% for post in include.category reversed %}
+        {% assign index = forloop.index | modulo: col %}
+        {% if index == 0 %}
+        {% assign index = col %}
+        {% endif %}
+        {% if index == i %}
+        <div class="card">
+          <a href="{{site.baseurl}}{{post.url}}">
+              {% if post.intro_image_url %}
+              <img src="{{post.intro_image_url}}"{% if post.intro_image_caption %} alt="{{post.intro_image_caption}}"{% endif %}/>
+              {% endif %}
+              <div>
+                <h2>{{post.title}}</h2>
+                {{post.excerpt}}
+              </div>
+          </a>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        {% if {{i}} == 1 %}
+        <!-- sticky cards -->
+        <!-- end of sticky cards -->
+        {% endif %}
       </div>
-      {% endif %}
       {% endfor %}
-
-      {% if {{i}} == 1 %}
-      <!-- sticky cards -->
-      <!-- end of sticky cards -->
-      {% endif %}
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
 </div>
-{% endfor %}
