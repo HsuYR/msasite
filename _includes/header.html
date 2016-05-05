@@ -26,8 +26,10 @@ document.getElementsByClassName('menu-icon')[0].onclick = function(){
   // toggle class show-site-nav
   if (nav.className.search('show-site-nav') > 0) {
     nav.className = nav.className.replace(' show-site-nav', '');
+    nav.style.height = 0;
   } else {
     nav.className += ' show-site-nav';
+    nav.style.height = (nav.getElementsByTagName('li').length * 56) + "px";
   }
 };
 </script>
