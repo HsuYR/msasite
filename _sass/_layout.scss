@@ -454,3 +454,31 @@
     }
   }
 }
+
+/*
+ * Activities
+ */
+.activities-page {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+}
+
+.activities {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: 20%;
+    @include media-query($on-laptop) {
+      width: 25%;
+    }
+    @include media-query($on-palm) {
+      width: 50%;
+    }
+  }
+}
