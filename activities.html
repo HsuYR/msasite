@@ -5,15 +5,15 @@ title: 活動
 <div class="activities-page">
   <h1 class="page-heading">活動</h1>
   <ul class="activities">
-    <li>迎新宿營</li>
-    <li>醫學營</li>
-    <li>醫學週</li>
-    <li>醫學之夜</li>
-    <li>耶誕舞會</li>
-    <li>制服之夜</li>
-    <li>兄弟姊妹盃</li>
-    <li>吃東西大賽</li>
-    <li>講座</li>
+    {% assign activities = site.activities | sort: 'order' %}
+    {% for activity in activities %}
+    <li>
+      <a class="activity" href="{{ activity.url }}">
+        <img src="/activities/img/{{ activity.cover }}" alt="{{ activity.title }}">
+        <h2>{{ activity.title }}</h2>
+      </a>
+    </li>
+    {% endfor %}
   </ul>
 
   <h1 class="page-heading">合作活動</h1>
