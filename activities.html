@@ -1,0 +1,31 @@
+---
+layout: fullwidth
+title: 活動
+---
+<div class="activities-page">
+  <h1 class="page-heading">活動</h1>
+  <ul class="activities">
+    {% assign activities = site.activities | sort: 'order' %}
+    {% for activity in activities %}
+    <li>
+      <a class="activity" href="{{ activity.url }}">
+        <img src="/activities/img/{{ activity.cover }}" alt="{{ activity.title }}">
+        <h2>{{ activity.title }}</h2>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">合作活動</h1>
+  <ul class="activities">
+    <li>PGY經驗分享座談會</li>
+    <li>新生家長座談會</li>
+    <li>畢業生家長座談會</li>
+    <li>孔夫子獎</li>
+    <li>白袍</li>
+    <li>畢業典禮</li>
+    <li>泰迪熊醫院TBH</li>
+    <li>服務隊</li>
+    <li>醫聯會活動</li>
+  </ul>
+</div>

@@ -30,6 +30,8 @@ cards-column: 3
 collections:
   team:
     output: true
+  activities:
+    output: true
 defaults:
   -
     scope:
@@ -37,3 +39,10 @@ defaults:
       type: team
     values:
       layout: meet
+  -
+    scope:
+      path: ""
+      type: activities
+    values:
+      layout: post
+      permalink: /:collection/:title/
