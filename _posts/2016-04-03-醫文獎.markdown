@@ -6,6 +6,7 @@ categories: events arts
 tags:
 intro_image_url: https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/s960x960/12898262_1021835817891839_7241739712421761113_o.jpg
 intro_image_caption: 醫文獎
+published: false
 ---
 感慨、體悟、愛戀藏在心裡口難開嗎？
 用文字做最好的幻術，包藏那些深深淺淺的心事。
