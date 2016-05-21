@@ -6,6 +6,7 @@ categories: events sports
 tags:
 intro_image_url: http://www.w3schools.com/w3css/img_fjords.jpg
 intro_image_caption: Fjords
+published: false
 ---
 轟轟烈烈的大醫盃結束到現在也一個月了，但球員帥氣的模樣一定還深深烙印在大家的腦海裡吧！
 
