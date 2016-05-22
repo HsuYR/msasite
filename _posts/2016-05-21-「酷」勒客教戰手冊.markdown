@@ -6,7 +6,7 @@ intro_image_url:
 intro_image_caption:
 excerpt: clerk真的是白色的路障嗎？白色路障是no-function嗎？#‎寶寶懷疑但寶寶不說
 ---
-[‪#‎大一寶寶開學日‬](大一寶寶開學日)
+[‪#‎大一寶寶開學日‬][大一寶寶開學日]
 
 某寶寶：哇哇clerk學長姐穿白袍好霸氣！
 
@@ -19,13 +19,13 @@ clerk真的是白色的路障嗎？
 
 白色路障是no-function嗎？
 
-[‪#‎寶寶懷疑但寶寶不說‬](‎寶寶懷疑但寶寶不說‬)
+[‪#‎寶寶懷疑但寶寶不說‬][‎寶寶懷疑但寶寶不說‬]
 
 聽了一堆資深寶寶的話後，
 
 還是想成為superfunction的clerk寶寶嗎？
 
-[‪#‎想知道如何擺脫NoFunction的HashTag嗎‬](‪‎想知道如何擺脫NoFunction的HashTag嗎‬)？
+[‪#‎想知道如何擺脫NoFunction的HashTag嗎‬][‪‎想知道如何擺脫NoFunction的HashTag嗎‬]？
 
 千萬別錯過這此的「CLERK全面攻略－「酷」勒克教戰手冊」喔！
 
@@ -35,7 +35,7 @@ clerk真的是白色的路障嗎？
 
 地點：N110
 
-[點我報名](報名網址)
+[點我報名][報名網址]
 
 [大一寶寶開學日]: https://www.facebook.com/hashtag/%E5%A4%A7%E4%B8%80%E5%AF%B6%E5%AF%B6%E9%96%8B%E5%AD%B8%E6%97%A5?source=feed_text&story_id=916407045172168
 [‎寶寶懷疑但寶寶不說‬]: https://www.facebook.com/hashtag/%E5%AF%B6%E5%AF%B6%E6%87%B7%E7%96%91%E4%BD%86%E5%AF%B6%E5%AF%B6%E4%B8%8D%E8%AA%AA?source=feed_text&story_id=916407045172168
